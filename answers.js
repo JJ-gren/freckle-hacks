@@ -7,4 +7,4 @@ fetch("https://api.freckle.com/2/math/questions/"+id+"?lang=en", {
   }
 })
   .then((response) => response.json())
-  .then((json) => console.log(json["obfuscated-correct-answers"]));
+  .then((json) => console.log(atob(json["obfuscated-correct-answers"])));
