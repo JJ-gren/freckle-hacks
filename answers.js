@@ -8,9 +8,13 @@ var response= await fetch("https://api.freckle.com/2/math/questions/"+id+"?lang=
   }
 })
 json=await response.json()
-console.log(atob(json["obfuscated-correct-answers"]))
+var j=json["obfuscated-correct-answers"]
+if (typeof j =="undefined") {
+    j=json['obfuscated-fill-in-the-blanks-correct-answers']
+}
+console.log(atob(j))
 
-var answer=atob(json["obfuscated-correct-answers"])
+var answer=atob(j)
 var list=document.querySelectorAll('[data-mathjax="true"]')
 for (button of list) {
     
