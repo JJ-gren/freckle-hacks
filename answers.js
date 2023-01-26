@@ -12,6 +12,10 @@ var j=json["obfuscated-correct-answers"]
 if (typeof j =="undefined") {
     j=json['obfuscated-fill-in-the-blanks-correct-answers']
 }
+if (typeof j =="undefined") {
+    j=json['obfuscated-graph-scatter-points-points']
+}
+
 console.log(atob(j))
 
 var answer=atob(j)
