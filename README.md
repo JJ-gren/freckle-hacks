@@ -1,4 +1,3 @@
 # freckle-hacks
-Freckle hacks ig toby sucks by the way
-toby sucks!!!!
-made by me 
+THESE ARE THE ORGINAL HACKS. THE OTHER ONE IS JUST A COPY AND OUTDATED. Please use this one.
+Also Toby sucks
