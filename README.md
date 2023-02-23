@@ -10,5 +10,6 @@ How to use:
 **Nobody's permitted to copy our code in any way or form or they will be put onto the blacklist**
 
 note: infinite coins takes a while to load and there are certain steps you need to do to run it.
+
 note 2: keep console open when using answers.js
 
