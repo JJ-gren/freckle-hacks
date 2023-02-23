@@ -14,4 +14,4 @@ note: infinite coins takes a while to load and there are certain steps you need 
 note 2: keep console open when using answers.js
 
 
-tags: freckle hacks, math, cheats, school, freckle, homework, free
+tags: freckle hacks, math, cheats, school, freckle, homework, free, renaissance
