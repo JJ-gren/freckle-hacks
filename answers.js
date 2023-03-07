@@ -21,7 +21,7 @@ district=d[0]
 
 
 async function getAnswer(){
-    var id = document.getElementsByClassName("math-question__wrapper___iRtlD")[0]["dataset"]["questionId"];
+    var id = document.querySelector('[data-mathjax="true"]').firstChild.getAttribute('data-question-id');
     var response = await fetch("https://assets.freckle.com/math/en/questions/"+id+".json", {
       method: "GET",
     
